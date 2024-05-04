@@ -39,7 +39,7 @@ class Fighter():
 
     def changeWeapon(self, weapon: Weapon):
         self.weapon = weapon
-        print(f"Игрок изменил оружие на {self.weapon.currentweapon}, с потенциальным уроном {self.weapon.max_damage} единиц")
+        print(f"Боец изменил оружие на {self.weapon.currentweapon}, с потенциальным уроном {self.weapon.max_damage} единиц")
 
     def choose_monster(self, monster):
         self.monster = monster
