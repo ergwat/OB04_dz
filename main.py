@@ -64,6 +64,6 @@ monster1 = Monster("Пятачок",random.randint(10,30), random.randint(1,20))
 warrior1 = Fighter(Sword(random.randint(3,51)))
 warrior1.choose_monster(monster1)
 
-while monster1.hp > 0:
-    warrior1.attack()
-    warrior1.changeWeapon(Bow(random.randint(1,11)))
+# while monster1.hp > 0:
+#     warrior1.attack()
+#     warrior1.changeWeapon(Bow(random.randint(1,11)))
