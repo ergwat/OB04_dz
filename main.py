@@ -47,7 +47,7 @@ class Fighter():
         damage = self.weapon.attack()
         self.monster.hp -= damage
         self.monster.check_hp()
-
+        return self.monster.hp
 class Monster():
     def __init__ (self, name, hp: int, jump_length):
         self.name = name
@@ -60,9 +60,9 @@ class Monster():
         else:
             print(f"{self.name} Всё ещё жив, у него осталось {self.hp} hp")
 
-monster1 = Monster("Пятачок",random.randint(10,30), random.randint(1,20))
-warrior1 = Fighter(Sword(random.randint(3,51)))
-warrior1.choose_monster(monster1)
+#monster1 = Monster("Пятачок",random.randint(10,30), random.randint(1,20))
+#warrior1 = Fighter(Sword(random.randint(3,51)))
+#warrior1.choose_monster(monster1)
 
 # while monster1.hp > 0:
 #     warrior1.attack()
